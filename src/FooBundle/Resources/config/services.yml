@@ -1,0 +1,5 @@
+services:
+    foo.example:
+        class: FooBundle\Command\FooHelloCommand
+        tags:
+            - { name: command.chain }

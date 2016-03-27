@@ -1,0 +1,10 @@
+services:
+    bar.example:
+        class: BarBundle\Command\BarHiCommand
+        tags:
+            - { name: command.chain, owner: "foo:hello" }
+
+    baz.example:
+        class: BarBundle\Command\BazHiCommand
+        tags:
+#            - { name: command.chain, owner: "foo:hello" }

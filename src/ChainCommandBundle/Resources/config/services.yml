@@ -1,0 +1,11 @@
+services:
+    chain_command.command_chaining:
+        class: ChainCommandBundle\Service\CommandChaining
+
+    chain_command.chained_command:
+        class: ChainCommandBundle\Command\ChainedCommand
+#        arguments:
+#            - "@chain_command.command_chaining"
+#            - "@logger"
+#        tags:
+#            -  { name: console.command }
